@@ -4,7 +4,7 @@ To run this as a developer:
 
 ```
  $ tox --notest
- $ .tox/py27/bin/gunicorn testapp
+ $ .tox/py27/bin/gunicorn sample_app.application
 ```
 
 Then make a request like:
