@@ -18,8 +18,8 @@ import falcon
 
 class _SimpleResource(object):
     def __init__(self, conf):
-        self._message = 'This is not Brant'
-        # self._message = ''
+        # self._message = 'This is not Brant'
+        self._message = 'Amazing new feature!'
 
     def on_get(self, req, resp):
         resp.body = json.dumps({'message': self._message})
