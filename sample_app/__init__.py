@@ -18,11 +18,8 @@ import falcon
 
 class _SimpleResource(object):
     def __init__(self, conf):
-        try:
-            message = conf.get('sample_app', 'message')
-        except ConfigParser.Error:
-            message = 'something'
-        self._message = message
+        self._message = 'This is not Brant'
+        # self._message = ''
 
     def on_get(self, req, resp):
         resp.body = json.dumps({'message': self._message})
